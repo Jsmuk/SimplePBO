@@ -13,6 +13,7 @@ namespace Beowulf.SimplePBO
         /// <param name="args"></param>
         [Command("pack")]
         [Help("Packs a folder into a PBO")]
+        [DefaultCommand]
         public void Pack(string[] args)
         {
             var c = Cli.Parse<PackCliArguments>(args);
