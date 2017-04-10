@@ -40,7 +40,9 @@ namespace Beowulf.SimplePBO
                 string path = f.FullName.Replace(input.FullName, "").TrimStart('\\');
                 if (!path.StartsWith(".git"))
                 {
-                    pbo.Add(new PboEntry(path, f.FullName));
+                    var entry = new PboEntry(path, f.FullName);
+                    entry.Path = entry.Path.Replace('/', '\\'); // Fix for building PBOs on Linux
+                    pbo.Add(entry);
                 }
 
             }
