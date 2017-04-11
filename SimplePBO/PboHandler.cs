@@ -42,6 +42,11 @@ namespace Beowulf.SimplePBO
                 {
                     var entry = new PboEntry(path, f.FullName);
                     entry.Path = entry.Path.Replace('/', '\\'); // Fix for building PBOs on Linux
+                    if (entry.Path.StartsWith(@"\"))
+                    {
+                        // Further fix for linux
+                        entry.Path = entry.Path.TrimStart('\\');
+                    }
                     pbo.Add(entry);
                 }
 
