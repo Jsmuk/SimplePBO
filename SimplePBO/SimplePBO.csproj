@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntryPoint, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntryPoint.1.2.0\lib\net45\EntryPoint.dll</HintPath>
+    <Reference Include="EntryPoint, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntryPoint.1.2.2\lib\net45\EntryPoint.dll</HintPath>
     </Reference>
     <Reference Include="Mac.Arma">
       <HintPath>..\lib\Mac.Arma.dll</HintPath>
